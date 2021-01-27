@@ -4,22 +4,21 @@
 
 body,
 html {
-    margin: 0 10%;
     min-height: 100vh;
     font-family: 'Yusei Magic', sans-serif;
+    margin: auto;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    background: url(../images/headphones.png), radial-gradient(#F1E099, #A0B29E);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 img {
     max-width: 100%;
@@ -29,6 +28,8 @@ header {
     display: flex;
     justify-content: space-between;
     background: #444;
+    padding: 0 3%;
+    align-items: center;
 }
 
 nav ul {
@@ -42,9 +43,39 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #eee;
-    padding: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+}
+
+a:hover {
+    color: #E1C03D;
+    border: solid #E1C03D;
+    border-width: 2px 0px;
+}
+
+.logo {
+    background: url(../images/laugh-track.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 50px;
+    padding: 50px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*
+    background: #eee;
+    opacity: .5;
+*/
 }
 
 footer {
     text-align: center;
+    background: #444;
+    color: #eee;
 }
