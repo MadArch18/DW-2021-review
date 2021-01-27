@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0 10%;
+    min-height: 100vh;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+}
