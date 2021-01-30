@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     background: #444;
-    padding: 0 3%;
+    padding: 2em;
     align-items: center;
 }
 
@@ -37,7 +37,7 @@ nav ul {
     margin: 0;
     padding: 10px;
     display: flex;
-
+    min-width: 500px;
 }
 
 nav ul li a {
@@ -47,7 +47,7 @@ nav ul li a {
     font-size: 1.5em;
 }
 
-a:hover {
+nav a:hover {
     color: #E1C03D;
     border: solid #E1C03D;
     border-width: 2px 0px;
@@ -58,7 +58,6 @@ a:hover {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 50px;
     padding: 50px;
 }
 
@@ -68,10 +67,39 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*
-    background: #eee;
-    opacity: .5;
+}
+
+button {
+    font-family: 'Yusei Magic', sans-serif;
+    border: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 20%;
+    background: #444;
+    color: #eee;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+}
+
+/*
+punch {
+    top: 80%;
+}
 */
+
+button:hover {
+    color: #E1C03D;
+    border: solid 2px #E1C03D;
+}
+
+button:active {
+    color: #A0B29E;
+    border: solid 2px #A0B29E;
+}
+
+.section {
+    display: none;
 }
 
 footer {

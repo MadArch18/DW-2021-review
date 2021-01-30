@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>Exercise 2 - HTML, CSS, and JS Practice</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
@@ -11,29 +12,32 @@
 
 <body>
     <header>
-        <div class="logo"></div>
+        <div> <a href="index.html" class="logo"></a></div>
         <nav>
             <ul>
-                <li><a href="#">Website One</a></li>
-                <li><a href="#">Website Two</a></li>
-                <li><a href="#">Website Three</a></li>
+                <li><a href="http://www.laughfactory.com/jokes/clean-jokes">Laugh Factory</a></li>
+                <li><a href="https://www.rd.com/jokes/">Reader's Digest</a></li>
+                <li><a href="https://parade.com/1041830/marynliles/clean-jokes/">Parade</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="section one">
-            <h2>Here is a joke</h2>
-            <p>here is the punchline!</p>
-        </section>
-        <section class="section two">
-            <h2>Here is a joke</h2>
-            <p>here is the punchline!</p>
-        </section>
-        <section class="section three">
-            <h2>Here is a joke</h2>
-            <p>here is the punchline!</p>
-        </section>
-
+        <button onclick="ShowAndHide()">Show me a joke!</button>
+        <div class="jokes">
+            <section class="section one" id="section">
+                <h2>What kind of music are balloons afriad of?</h2>
+                <p>Pop music</p>
+            </section>
+            <section class="section two" id="section">
+                <h2>What musical key do cows sing in?</h2>
+                <p>Beef flat</p>
+            </section>
+            <section class="section three" id="section">
+                <h2>What's an avocado's favourite music?</h2>
+                <p>Guac'n'roll</p>
+            </section>
+        </div>
+        <!--        <button class="button punch" onclick="ShowAndHide()">Show me the punchline!</button>-->
     </main>
     <footer>
         <div>
@@ -41,4 +45,27 @@
             <p>© Madeline Archibald // NMED 3720: The Dynamic Web // University of Lethbridge, 2021</p>
         </div>
     </footer>
-</body></html>
+
+    <script>
+        function ShowAndHide() {
+            var x = document.getElementById("section");
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        //        function ShowAndHide2() {
+        //            var x = document.getElementsByClassName("section one p");
+        //            if (x.style.display == 'none') {
+        //                x.style.display = 'block';
+        //            } else {
+        //                x.style.display = 'none';
+        //            }
+        //        }
+
+    </script>
+</body>
+
+</html>
