@@ -5,7 +5,7 @@
     <title>Exercise 2 - HTML, CSS, and JS Practice</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
@@ -22,20 +22,25 @@
         </nav>
     </header>
     <main>
-        <button onclick="ShowAndHide()">Show me a joke!</button>
+        <div class="buttons">
+            <div class="button b1" id="click1">Show me a joke!</div>
+            <div class="button b2" id="click2">Show me another joke!</div>
+            <div class="button b3" id="click3">Show me one more joke!</div>
+        </div>
         <div class="jokes">
-            <section class="section one">
-                <h2>What kind of music are balloons afriad of?</h2>
+            <div class="section" id="one">
+                <h2>What kind of music are balloons afraid of?</h2>
                 <p>Pop music</p>
-            </section>
-            <section class="section two" id="section">
+            </div>
+            <div class="section" id="two">
                 <h2>What musical key do cows sing in?</h2>
                 <p>Beef flat</p>
-            </section>
-            <section class="section three" id="section">
+            </div>
+            <div class="section" id="three">
                 <h2>What's an avocado's favourite music?</h2>
                 <p>Guac'n'roll</p>
-            </section>
+            </div>
+
         </div>
         <!--        <button class="button punch" onclick="ShowAndHide()">Show me the punchline!</button>-->
     </main>
@@ -48,17 +53,12 @@
             <p>© Madeline Archibald // NMED 3720: The Dynamic Web // University of Lethbridge, 2021</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/scripts.js"></script>
 
-    <script>
-        function ShowAndHide() {
-            var x = document.getElementById("section");
-            if (x.style.display == 'none') {
-                x.style.display = 'block';
-            } else {
-                x.style.display = 'none';
-            }
-        }
 
+
+    <!--
         //        function ShowAndHide2() {
         //            var x = document.getElementsByClassName("section one p");
         //            if (x.style.display == 'none') {
@@ -68,7 +68,9 @@
         //            }
         //        }
 
-    </script>
+        //https://html-shark.com/HTML/ShowHideSections.htm
+        //https://stackoverflow.com/questions/57076366/how-to-loop-through-elements-using-javascript-on-button-click/57076455
+-->
 </body>
 
 </html>

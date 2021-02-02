@@ -69,7 +69,7 @@ main {
     align-items: center;
 }
 
-button {
+.button {
     font-family: 'Yusei Magic', sans-serif;
     border: none;
     font-size: 1.5em;
@@ -82,26 +82,28 @@ button {
     outline: none;
 }
 
-/*
-punch {
-    top: 80%;
-}
-*/
 
-button:hover {
+.button:hover {
     color: #E1C03D;
     border: solid 2px #E1C03D;
 }
 
-button:active {
+.button:active {
     color: #A0B29E;
     border: solid 2px #A0B29E;
 }
 
 .section {
-    display: none;
     cursor: url(../images/iconfinder_Streamline-48_185068.png), auto;
+    display: none;
 }
+
+
+.buttons :not(:first-child) {
+    display: none;
+}
+
+
 
 footer {
     text-align: center;
