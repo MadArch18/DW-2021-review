@@ -12,15 +12,10 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background: url(../images/headphones.png), radial-gradient(#F1E099, #A0B29E);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 
-
-img {
+header img {
     max-width: 100%;
 }
 
@@ -67,19 +62,23 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url(../images/headphones.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .button {
     font-family: 'Yusei Magic', sans-serif;
     border: none;
     font-size: 1.5em;
-    position: absolute;
     top: 20%;
     background: #444;
     color: #eee;
     padding: 10px;
     border-radius: 15px;
     outline: none;
+    cursor: pointer;
 }
 
 
@@ -96,17 +95,31 @@ main {
 .section {
     cursor: url(../images/iconfinder_Streamline-48_185068.png), auto;
     display: none;
+    text-align: center;
 }
+
 
 
 .buttons :not(:first-child) {
     display: none;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 0 5%;
+    grid-column-gap: 5%;
+}
 
+.item1 {
+    text-align: right;
+}
+
+.item2 .logo {
+    max-width: 50px;
+}
 
 footer {
-    text-align: center;
     background: #444;
     color: #eee;
     line-height: 1em;
